@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
-import artwork6 from '../assets/images/artwork-6.png';
-import artwork7 from '../assets/images/artwork-7.png';
-import artwork9 from '../assets/images/artwork-9.png';
+import artwork6 from '../assets/images/artwork-6.webp';
+import artwork7 from '../assets/images/artwork-7.webp';
+import artwork9 from '../assets/images/artwork-9.webp';
 
 const Hero = () => {
   const [current, setCurrent] = useState<number>(0);
