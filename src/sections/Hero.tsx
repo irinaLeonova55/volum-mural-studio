@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import artwork6 from '../assets/images/artwork-6.webp';
 import artwork7 from '../assets/images/artwork-7.webp';
 import artwork9 from '../assets/images/artwork-9.webp';
@@ -41,12 +42,12 @@ const Hero = () => {
           Contemporary murals
           <br /> for architecture & public spaces
         </p>
-        <a
-          href="/collection"
+        <Link
+          to="/collection"
           className="w-50 flex justify-center items-center h-8 border-[#F5F1EA] bg-transparent text-[#F5F1EA] font-medium rounded-sm mt-2 sm:mt-5 uppercase text-xs border cursor-pointer tracking-wide hover:bg-[#F5F1EA] hover:text-black"
         >
           View Collection
-        </a>
+        </Link>
       </div>
     </section>
   );

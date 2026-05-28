@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 interface ButtonProps {
   onClick?: () => void;
   text: string;
@@ -8,12 +10,12 @@ interface ButtonProps {
 const Button = ({ onClick, text, type, href }: ButtonProps) => {
   if (href) {
     return (
-      <a
-        href={href}
+      <Link
+        to={href}
         className="w-full flex justify-center items-center h-8 border-black bg-black text-white font-medium rounded-sm mt-10 uppercase text-xs border cursor-pointer tracking-wide hover:border-black hover:text-black hover:bg-transparent"
       >
         {text}
-      </a>
+      </Link>
     );
   }
   return (

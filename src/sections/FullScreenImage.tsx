@@ -1,5 +1,6 @@
 import artwork5 from '../assets/images/artwork-5.png';
 import { useRef } from 'react';
+import { Link } from 'react-router-dom';
 
 import { useScroll, useTransform, motion } from 'motion/react';
 
@@ -33,12 +34,12 @@ const FullScreenImage = () => {
           <h2 className="flex flex-col items-center justify-center text-3xl sm:text-4xl text-center text-[#F5F1EA]">
             Murals, objects and surfaces designed for contemporary spaces.
           </h2>
-          <a
-            href="/collection"
+          <Link
+            to="/collection"
             className="mx-auto w-50 flex justify-center items-center h-8 border-[#F5F1EA] bg-transparent text-[#F5F1EA] font-medium rounded-sm mt-5 sm:mt-10 uppercase text-xs border cursor-pointer tracking-wide hover:bg-[#F5F1EA] hover:text-black"
           >
             See All Works
-          </a>
+          </Link>
         </div>
       </div>
     </section>
